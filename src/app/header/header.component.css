@@ -1,0 +1,99 @@
+
+/* burger menu */
+.bar1,
+.bar2,
+.bar3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  background: white;
+  transition: all 0.5s ease;
+}
+
+.bar1.change {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar2.change {
+  opacity: 0;
+}
+
+.bar3.change {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+.main-nav {
+  font-size: 15px;
+  padding: 4px 20px!important;
+  color: white;
+}
+
+.navbar-brand,
+.my-button1,
+.my-button2 {
+  font-size: 15px;
+  padding: 8px 30px!important;
+  border: solid 1px white;
+  border-radius: 0px;
+  color: white;
+}
+
+header {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../assets/3.jpg');
+  background-position: left;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.main-text, .sub-text {
+  color: white;
+  font-weight: 400;
+}
+
+
+.my-jumbotron {
+  height: 100vh
+}
+
+.my-button2 {
+  color: black;
+  background: white;
+}
+
+.nav-link {
+  padding: 8px 30px!important;
+}
+
+.clickable:hover {
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.clickable-reverse:hover {
+  background: black;
+  /* border: 1px solid white; */
+  color: white;
+}
+
+.navbar {
+  transition: 0.3s;
+}
+
+@media screen and (min-width:1200px) {
+  .navbar {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+}
+
+
+
+
+
+
+
+

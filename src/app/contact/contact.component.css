@@ -1,0 +1,37 @@
+.height-40 {
+  min-height: 40vh;
+}
+
+.main-text, .sub-text {
+  color: white;
+}
+
+.about-picture {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../assets/3.jpg');
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.contact-title {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../assets/3.jpg');
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.phone,
+.email,
+.linkedin {
+  transition: 0.3s;
+}
+
+@media screen and (min-width:720px) {
+  .phone:hover,
+  .email:hover,
+  .linkedin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+    transition: 0.3s;
+  }
+}

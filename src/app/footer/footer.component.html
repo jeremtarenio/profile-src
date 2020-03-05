@@ -1,0 +1,31 @@
+<section id="footer">
+  <div
+    class="container-fluid py-5 container-px"
+  >
+    <div class="row">
+      <div
+      class="col-md-6 text-light footer-links"
+      >
+        <p style="letter-spacing: 2px;" class="text-uppercase">Quick Links</p>
+        <p class="m-0 mb-1" (click)="scrollToHome()" style="cursor: pointer;">Home</p>
+        <p class="m-0 mb-1" (click)="scroll('about-me')" style="cursor: pointer;">About</p>
+        <p class="m-0 mb-1" (click)="scroll('experience')" style="cursor: pointer;">Experience</p>
+        <p class="m-0 mb-1" (click)="scroll('technical')" style="cursor: pointer;">Technical</p>
+        <p class="m-0 mb-1" (click)="scroll('contact')"  style="cursor: pointer;">Contact</p>
+      </div>
+      <div class="col-md-6 text-light">
+        <p style="letter-spacing: 2px;" class="text-uppercase">Contact Me</p>
+        <p class="m-0 mb-1" (click)="onClickEmail()" style="cursor: pointer;">jeremtarenio@gmail.com</p>
+        <p class="m-0 mb-2" (click)="onClickNumber()" style="cursor: pointer;">09293042737</p>
+        <p>
+          <i class="fab fa-facebook-square fa-2x mr-2" (click)="onClickFb()" style="cursor: pointer;"></i>
+          <i class="fab fa-instagram fa-2x mr-2" (click)="onClickIg()" style="cursor: pointer;"></i>
+          <i class="fab fa-linkedin fa-2x mr-2" (click)="onClickLinkedIn()" style="cursor: pointer;"></i>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="col-12 m-0 p-1" style="background: black;">
+  <p class="text-center m-0" style="color: gray;">Copyright © {{ date }} Jeremiah Tarenio. All rights reserved.</p>
+</div>

@@ -1,0 +1,52 @@
+<header id="header">
+  <div class="container">
+      <!-- [ngClass]="{'fixed-top': isScreenSmall === true}" -->
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-md fixed-top"
+        [ngStyle]="{'background-color': scrolled || expanded ? 'black' : ''}"
+      >
+          <a href="https://github.com/jeremtarenio?tab=repositories" class="navbar-brand mt-2 clickable" target="_blank">GitHub</a>
+
+          <button
+            class="navbar-toggler p-0 m-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#myNavBar"
+            (click)="expand()"
+          >
+            <div class="bar1" [ngClass]="{'change': expanded ? true : false}"></div>
+            <div class="bar2" [ngClass]="{'change': expanded ? true : false}"></div>
+            <div class="bar3" [ngClass]="{'change': expanded ? true : false}"></div>
+          </button>
+
+          <div class="collapse navbar-collapse d-md-flex justify-content-end mt-1 mt-md-0" id="myNavBar">
+            <!-- <ul class="navbar-nav">
+              <li class="nav-item"><a href="#header" class="nav-link brand m-2 text-capitalize nav-active mx-1">GitHub</a></li>
+            </ul> -->
+            <ul class="navbar-nav">
+              <li class="nav-item"><a (click)="scrollToHome()" class="nav-link main-nav p-2 text-capitalize nav-active clickable" style="cursor: pointer;">home</a></li>
+              <li class="nav-item"><a (click)="scroll('about-me')" class="nav-link main-nav p-2 text-capitalize nav-active clickable" style="cursor: pointer;">about</a></li>
+              <li class="nav-item"><a (click)="scroll('experience')" class="nav-link main-nav p-2 text-capitalize nav-active clickable" style="cursor: pointer;">experience</a></li>
+              <li class="nav-item"><a (click)="scroll('technical')" class="nav-link main-nav p-2 text-capitalize nav-active clickable" style="cursor: pointer;">technical</a></li>
+              <li class="nav-item"><a (click)="scroll('contact')" class="nav-link main-nav p-2 text-capitalize nav-active clickable" style="cursor: pointer;">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="row my-jumbotron align-content-center position-sticky">
+          <div class="col-md-12">
+            <h1 class="text-center main-text">Hi there, I'm Jerem & welcome to my web resume.</h1>
+            <h4 class="text-center sub-text font-weight-light">I'm a junior web developer based in San Fernando, Pampanga</h4>
+          </div>
+          <div class="col d-flex justify-content-center mt-3">
+              <button
+                class="btn my-button1 mx-2 clickable"
+                (click)="scroll('about-me')"
+              >Continue</button>
+              <button class="btn my-button2 mx-2 clickable-reverse" (click)="scroll('contact')">Contact</button>
+          </div>
+        </div>
+  </div>
+</header>
+

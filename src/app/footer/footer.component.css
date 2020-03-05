@@ -1,0 +1,26 @@
+#footer {
+  background: #212529;
+}
+
+.container-px {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+
+
+@media screen and (min-width:992px) {
+  .footer-links {
+    margin-bottom: 0;
+  }
+
+  .container-px {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+}
+

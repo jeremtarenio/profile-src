@@ -1,0 +1,533 @@
+<section id="technical" style="border-top: 1px solid black;">
+  <div class="container-fluid pt-5" id="skills">
+    <!-- technical -->
+    <h1 class="text-uppercase text-center font-weight-light letter-spacing-02">
+      technical
+    </h1>
+    <div
+      [ngClass]="
+        isScreenSmall ? 'title-underline-small-black' : 'title-underline-black'
+      "
+    ></div>
+    <h4 class="text-center sub-text font-weight-light mb-5">
+      Doesn't work, I hate programming. It works! I L-O-V-E programming.
+    </h4>
+    <div>
+      <div class="row">
+        <div class="col">
+          <!-- title start -->
+          <h1 class="text-capitalize text-center font-weight-light">
+            Skills
+          </h1>
+          <!-- <div
+            [ngClass]="
+              isScreenSmall ? 'title-underline-small' : 'title-underline'
+            "
+          ></div> -->
+          <p class="text-center mb-5 categories">
+            <a
+              (click)="onSelectCategory('languages')"
+              style="cursor: pointer"
+              [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'languages' }"
+              >Languages</a
+            >
+            |
+            <a
+              (click)="onSelectCategory('frontend')"
+              style="cursor: pointer"
+              [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'frontend' }"
+              >Front-End</a
+            >
+            |
+            <a
+              (click)="onSelectCategory('backend')"
+              style="cursor: pointer"
+              [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'backend' }"
+              >Back-End</a
+            >
+          </p>
+          <!-- title end -->
+        </div>
+      </div>
+
+      <!-- languages start -->
+      <div
+        id="languages"
+        class="row text-center justify-content-center mb-4"
+        [hidden]="activeCategory !== 'languages'"
+        [ngClass]="activeCategory === 'languages' ? 'shown' : 'hidden'"
+        [@visibilityChanged]="languageState"
+      >
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-3">
+          <i class="fab fa-js fa-7x mb-2"></i>
+          <h2 class="font-weight-light">JavaScript</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 60%">60%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I started using JavaScript shortly after I became comfortable with
+            Java which was in 2018. ES5, DOM manipulation & also a decent amount
+            of ES6
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 skill mb-3">
+          <i class="fab fa-java fa-7x mb-2"></i>
+          <h2 class="font-weight-light">Java</h2>
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 75%">75%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I've been using Java since 2017. It's the programming language that
+            made programming make sense to me. It's the language I'm most
+            confident in. From the very basics to OOP.
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-0" data-aos="fade-up" data-aos-delay="300">
+          <span
+            class="iconify mb-2 ic-ts"
+            data-icon="simple-icons:typescript"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">TypeScript</h2>
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 55%">55%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            To be honest, if it weren't for Angular, I would've never learned
+            TypeScript. I'm grateful that I did, though. I started using it 5
+            months ago.
+          </p>
+        </div>
+      </div>
+
+      <!-- frontend start -->
+      <div
+        id="frontend"
+        class="row text-center justify-content-center mb-5"
+        [hidden]="activeCategory !== 'frontend'"
+        [ngClass]="activeCategory === 'frontend' ? 'shown' : 'hidden'"
+        [@visibilityChanged]="frontendState"
+      >
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 skill mb-3" style="text-align: center">
+          <i class="fab fa-html5 fa-7x mb-2"></i>
+          <h2 class="font-weight-light">HTML5</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 90%">90%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            Who doesn't know HTML? Kidding aside, my first experience with HTML
+            was back in high school!
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-3">
+          <i class="fab fa-bootstrap fa-7x mb-2"></i>
+          <h2 class="font-weight-light">Bootstrap</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 70%">70%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I also started using Bootstrap 5 months ago along with Angular.
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-0">
+          <i class="fab fa-angular fa-7x mb-2"></i>
+          <h2 class="font-weight-light">Angular 2+</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 70%">70%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            Like I said, 5 months ago :)
+          </p>
+        </div>
+      </div>
+
+      <!-- backend start -->
+      <div
+        id="backend"
+        class="row text-center justify-content-center mb-4"
+        [hidden]="activeCategory !== 'backend'"
+        [ngClass]="activeCategory === 'backend' ? 'shown' : 'hidden'"
+        [@visibilityChanged]="backendState"
+      >
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 skill mb-3" style="text-align: center">
+          <span
+            class="iconify mb-4 ic-spring backend"
+            data-icon="simple-icons:spring"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">Spring REST</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 60%">60%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I experienced the spring framework during my internship which was
+            back in April 2018.
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-3">
+          <span
+            class="iconify mb-4 ic-node backend"
+            data-icon="fa-brands:node-js"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">Node.js REST</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 60%">60%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            After learning spring APIs, curiosity got the better of me and
+            decided to learn the JavaScript way of building APIs.
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-3">
+          <span
+            class="iconify mb-4 ic-mongo backend"
+            data-icon="whh-mongodb"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">MongoDB</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 70%">70%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I've used MongoDB for a very little project during college for well,
+            just for fun. NoSQL is ql (cool)
+          </p>
+        </div>
+
+        <!-- skill start -->
+        <div class="col-md-6 col-lg-3 mb-0">
+          <span
+            class="iconify mb-4 ic-sql backend"
+            data-icon="whh-mysqltwo"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">MySQL</h2>
+          <!--  progressBar start -->
+          <div
+            style="border: 1px solid black; display: inline-block"
+            class="my-3"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            <div class="bg-dark text-light" style="width: 60%">60%</div>
+          </div>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            Who doesn't know SQL? No really, who doesn't? On a serious note,
+            MySQL was my first experience in relational databases. It's what we
+            used during college.
+          </p>
+        </div>
+      </div>
+
+      <p class="text-center mb-5 categories" *ngIf="isScreenSmall">
+        <a
+          (click)="onSelectCategory('languages')"
+          style="cursor: pointer"
+          [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'languages' }"
+          >Languages</a
+        >
+        |
+        <a
+          (click)="onSelectCategory('frontend')"
+          style="cursor: pointer"
+          [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'frontend' }"
+          >Front-End</a
+        >
+        |
+        <a
+          (click)="onSelectCategory('backend')"
+          style="cursor: pointer"
+          [ngClass]="{ 'font-weight-bold text-black': activeCategory === 'backend' }"
+          >Back-End</a
+        >
+      </p>
+    </div>
+  </div>
+
+
+</section>
+
+<div class="container-fluid p-5" id="projects">
+  <div>
+    <div class="row">
+      <div class="col">
+        <!-- title start -->
+        <h1 class="text-capitalize text-center font-weight-light">projects</h1>
+        <!-- <div
+          [ngClass]="
+            isScreenSmall ? 'title-underline-small' : 'title-underline'
+          "
+        ></div> -->
+        <h4 class="text-center sub-text font-weight-light mb-5">
+          Some of them, at least.
+        </h4>
+      </div>
+    </div>
+
+    <div class="row text-center justify-content-center mb-0">
+      <div
+        class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center recipe-book mb-3"
+        style="cursor: pointer;"
+        (click)="onClickRecipe()"
+        data-aos="fade-up" data-aos-delay="100"
+      >
+        <div>
+          <i class="fab fa-angular fa-7x mb-2"></i>
+          <span
+            class="iconify mb-4 ic-spring backend"
+            data-icon="simple-icons:spring"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">Recipe Book</h2>
+
+          <p class="font-italic font-weight-bold mb-1">
+            Angular, Spring REST
+          </p>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            A simple recipe book app that utilizes all major features and
+            functionalities of Angular 8.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center web-resume mb-3"
+        style="cursor: pointer;"
+        data-aos="fade-up" data-aos-delay="200"
+      >
+        <div>
+          <i class="fab fa-angular fa-7x mb-2"></i>
+          <span
+            class="iconify mb-4 ic-bootstrap"
+            data-icon="fa-brands:bootstrap"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">This Web Resume</h2>
+          <p class="font-italic font-weight-bold mb-1">Bootstrap, Angular</p>
+          <p
+            style="display: inline-block"
+            [ngStyle]="{ width: isScreenSmall ? '60%' : '100%' }"
+          >
+            I made this very site!
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col-md-6 col-lg-3 d-flex justify-content-center align-items-center more-github mb-3"
+        style="cursor: pointer;"
+        (click)="onClickGitHub()"
+        data-aos="fade-up" data-aos-delay="300"
+      >
+        <div>
+          <span
+            class="iconify"
+            data-icon="feather-more-horizontal"
+            data-inline="false"
+          ></span>
+          <h2 class="font-weight-light">More on GitHub</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- #projects {
+  background: rgb(246, 246, 246);
+}
+
+h1 {
+  color: #212529;
+}
+
+
+.fab, .fas {
+  color: #212529;
+}
+
+#skills {
+  width: 85vw;
+}
+
+path {
+  fill:none;
+  stroke:#212529;
+  pointer-events:all;
+}
+
+.iconify {
+  font-size: 112px;
+  color: #212529;
+  transition: 0.3s;
+}
+
+.iconify.backend {
+  font-size: 96px;
+}
+
+.text-black {
+  color: black;
+}
+
+@media screen and (min-width:720px) { /* means 768 and ABOVE */
+  .fa-html5:hover {
+    color: #E44D26;
+    transition: 0.3s;
+  }
+
+  .fa-bootstrap:hover {
+    color: #563D7C;
+    transition: 0.3s;
+  }
+
+  .fa-js:hover {
+    color: #F0DB4F;
+    transition: 0.3s;
+  }
+
+
+  .fa-angular:hover {
+    color: #DD0031;
+    transition: 0.3s;
+  }
+
+  .fa-java:hover {
+    color: #73A1FB;
+    transition: 0.3s;
+  }
+
+  .ic-ts:hover {
+    color: #007ACC;
+  }
+
+  .ic-spring:hover {
+    color: #77BC1F;
+  }
+
+  .ic-node:hover {
+    color: #699F63;
+  }
+
+  .ic-mongo:hover {
+    color: #58AA50;
+  }
+
+  .ic-sql:hover {
+    color: #467E9C;
+  }
+
+  .ic-bootstrap:hover {
+    color: #563D7C;
+  }
+
+  .recipe-book,
+  .web-resume,
+  .more-github {
+    transition: 0.3s;
+  }
+
+  .recipe-book:hover,
+  .web-resume:hover,
+  .more-github:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+  .categories:hover {
+    color: black;
+  }
+
+} -->
+
+

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  overflow-x: hidden;
+
+}
+
+.title-underline {
+  width: 15rem;
+  height: 1px;
+  margin: 0.5em auto;
+}
+
+.title-underline.black {
+  background: #212529;
+}
+
+.title-underline.white {
+  background: white;
+}
+
+.sub-text {
+  font-size: 1.1rem;
+}
+
+.letter-spacing-02 {
+  letter-spacing: 0.2rem;
+}
+
+@media screen and (min-width:768px) {
+  .title-underline {
+    width: 23rem;
+  }
+
+}
+
+

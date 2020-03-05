@@ -1,0 +1,117 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+}
+
+.profile-card {
+  /* width: 450px;
+  height: 250px; */
+  width: 800px;
+  height: 444px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  position: relative;
+}
+
+.profile-card h1 {
+  text-align: center;
+}
+
+.profile-card .additional {
+  position: absolute;
+  width: 266px;
+  height: 100%;
+  background: #212529;
+  transition: width 1s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.profile-card:hover .additional {
+  width: 100%;
+}
+
+.profile-card .additional .user-card {
+  width: 266px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.profile-card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);
+}
+
+.profile-card .additional .more-info {
+  width: 534px;
+  float: left;
+  position: absolute;
+  left: 266px;
+  height: 100%;
+}
+
+.profile-card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.profile-card .general {
+  width: 534px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.profile-card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+}
+
+p{
+  font-size: 20px;
+}
+
+.about-mobile {
+  display: flex!important;
+
+}
+
+.about-desktop {
+  display: none!important;
+}
+
+
+@media screen and (min-width:992px) {
+  .container {
+    max-width: 90%;
+}
+
+  .about-mobile {
+    display: none!important;
+
+  }
+
+  .about-desktop {
+    display: flex!important;
+  }
+
+
+}
+
+

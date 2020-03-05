@@ -1,0 +1,53 @@
+<section id="contact">
+  <div class="container-fluid">
+    <div class="row height-40 align-content-center contact-title">
+      <div class="col">
+        <h1
+          class="text-light main-text text-center font-weight-light text-uppercase letter-spacing-02"
+        >
+          Contact
+        </h1>
+        <div class="title-underline white"></div>
+        <div></div>
+        <h4 class="text-center sub-text font-weight-light">
+          What's up? Tell me about it.
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="container-fluid contact-options"
+    style="width: 85vw"
+  >
+    <div class="row text-center justify-content-center py-5">
+      <div
+        class="col-md-6 col-lg-3 phone my-4"
+        (click)="onClickNumber()"
+        style="cursor: pointer;"
+      >
+        <i class="fas fa-6x mb-2 fa-phone mb-4"></i>
+        <h2 class="font-weight-light">Phone</h2>
+        <p style="display: inline-block;">0929 - 304 - 2737</p>
+      </div>
+      <div
+      class="col-md-6 col-lg-3 email my-4"
+      (click)="onClickEmail()"
+      style="cursor: pointer;"
+      >
+        <i class="fas fa-6x mb-2 fa-at mb-4"></i>
+        <h2 class="font-weight-light">E-mail</h2>
+        <p style="display: inline-block;">jeremtarenio@gmail.com</p>
+      </div>
+      <div
+        class="col-md-6 col-lg-3 linkedin my-4"
+        (click)="onClickLinkedIn()"
+        style="cursor: pointer;"
+      >
+        <i class="fab fa-6x mb-2 fa-linkedin mb-4"></i>
+        <h2 class="font-weight-light">LinkedIn</h2>
+        <p style="display: inline-block;">linkedin.com/in/jeremtarenio</p>
+      </div>
+    </div>
+  </div>
+</section>
