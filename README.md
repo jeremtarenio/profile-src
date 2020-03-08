@@ -1,4 +1,7 @@
-# PersonalWebsite
+# Personal Website
+
+## About
+This app serves as my web resume. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.15.
 
