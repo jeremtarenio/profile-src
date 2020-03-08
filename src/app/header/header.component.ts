@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { debounce } from './debouncer';
 
 @Component({
   selector: 'app-header',
@@ -18,7 +19,7 @@ export class HeaderComponent implements OnInit {
     const el = document.getElementById(id);
 
     window.scrollTo({
-      top: el.offsetTop - 64,
+      top: el.offsetTop - 56,
       behavior: 'smooth'
     });
   }
@@ -35,7 +36,9 @@ export class HeaderComponent implements OnInit {
   }
 
   @HostListener('window:scroll', ['$event']) // for window scroll events
+  @debounce()
   onScroll(event) {
+    console.log(event);
     this.scrolled = true;
     this.scrolled = window.pageYOffset === 0 ? false : true;
   }

@@ -1,12 +1,12 @@
 <header id="header">
-  <div class="container">
+  <div>
       <!-- [ngClass]="{'fixed-top': isScreenSmall === true}" -->
       <nav
         id="navbar"
         class="navbar navbar-expand-md fixed-top"
         [ngStyle]="{'background-color': scrolled || expanded ? 'black' : ''}"
       >
-          <a href="https://github.com/jeremtarenio?tab=repositories" class="navbar-brand mt-2 clickable" target="_blank">GitHub</a>
+          <a href="https://github.com/jeremtarenio?tab=repositories" class="navbar-brand  clickable" target="_blank">GitHub</a>
 
           <button
             class="navbar-toggler p-0 m-0"
@@ -34,7 +34,7 @@
           </div>
         </nav>
 
-        <div class="row my-jumbotron align-content-center position-sticky">
+        <!-- <div class="row my-jumbotron align-content-center position-sticky">
           <div class="col-md-12">
             <h1 class="text-center main-text">Hi there, I'm Jerem & welcome to my web resume.</h1>
             <h4 class="text-center sub-text font-weight-light">I'm a junior web developer based in San Fernando, Pampanga</h4>
@@ -46,7 +46,26 @@
               >Continue</button>
               <button class="btn my-button2 mx-2 clickable-reverse" (click)="scroll('contact')">Contact</button>
           </div>
-        </div>
+        </div> -->
+
+  </div>
+  <div class="container d-flex align-items-center header-text">
+    <div class="heading" style="display:inline-block" >
+      <h1 class="main m-0" data-aos="fade-right" data-aos-delay="0">HI THERE, I'M</h1>
+      <h1 class="main m-0" data-aos="fade-left" data-aos-delay="200">JEREMIAH TARENIO</h1>
+      <div data-aos="fade-right" data-aos-delay="400">
+        <div class="header-separator"></div>
+        <p class="sub">I'm a junior web developer based in San Fernando, Pampanga.</p>
+      </div>
+
+    </div>
+  </div>
+  <div class="next-button d-flex justify-content-center noselect" (click)="scroll('about-me')" data-aos="fade-down" data-aos-delay="600" data-aos-offset="0px">
+    <div >
+      <p class="learn-more m-0" >Click to continue</p>
+      <p class="learn-more-arrow m-0"><span class="iconify" data-icon="ic-baseline-keyboard-arrow-down" data-inline="false"></span></p>
+    </div>
+
   </div>
 </header>
 

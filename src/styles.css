@@ -1,9 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
-html,
-body {
+html {
   overflow-x: hidden;
+  height: 100%;
+}
 
+body {
+  height: 100%;
+  width: 100%;
+}
+
+p,
+li,
+a,
+h4 {
+  font-family: Roboto;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 
 .title-underline {
@@ -28,11 +49,8 @@ body {
   letter-spacing: 0.2rem;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .title-underline {
     width: 23rem;
   }
-
 }
-
-

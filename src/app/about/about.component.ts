@@ -1,4 +1,11 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  HostListener,
+  ViewChild,
+  ElementRef,
+  AfterViewInit
+} from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -6,13 +13,14 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  isCardToggled = false;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
+  ngOnInit() {}
 
+  toggle() {
+    this.isCardToggled = !this.isCardToggled;
   }
-
-
 
 }

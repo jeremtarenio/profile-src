@@ -1,9 +1,11 @@
 <section id="contact">
   <div class="container-fluid">
     <div class="row height-40 align-content-center contact-title">
-      <div class="col">
+      <div class="col" data-aos="fade-right" data-aos-anchor="#contact-top" data-aos-anchor-placement="top-center"
+      data-aos-delay="0">
         <h1
           class="text-light main-text text-center font-weight-light text-uppercase letter-spacing-02"
+          id="contact-top"
         >
           Contact
         </h1>
@@ -25,28 +27,43 @@
         class="col-md-6 col-lg-3 phone my-4"
         (click)="onClickNumber()"
         style="cursor: pointer;"
+
       >
+      <div data-aos="fade-up" data-aos-anchor="#contact-top" data-aos-anchor-placement="top-center"
+      data-aos-delay="200">
         <i class="fas fa-6x mb-2 fa-phone mb-4"></i>
         <h2 class="font-weight-light">Phone</h2>
         <p style="display: inline-block;">0929 - 304 - 2737</p>
+      </div>
+
       </div>
       <div
       class="col-md-6 col-lg-3 email my-4"
       (click)="onClickEmail()"
       style="cursor: pointer;"
+
       >
+      <div data-aos="fade-up" data-aos-anchor="#contact-top" data-aos-anchor-placement="top-center"
+      data-aos-delay="400">
         <i class="fas fa-6x mb-2 fa-at mb-4"></i>
         <h2 class="font-weight-light">E-mail</h2>
         <p style="display: inline-block;">jeremtarenio@gmail.com</p>
+      </div>
+
       </div>
       <div
         class="col-md-6 col-lg-3 linkedin my-4"
         (click)="onClickLinkedIn()"
         style="cursor: pointer;"
+
       >
+      <div data-aos="fade-up" data-aos-anchor="#contact-top" data-aos-anchor-placement="top-center"
+      data-aos-delay="600">
         <i class="fab fa-6x mb-2 fa-linkedin mb-4"></i>
         <h2 class="font-weight-light">LinkedIn</h2>
         <p style="display: inline-block;">linkedin.com/in/jeremtarenio</p>
+      </div>
+
       </div>
     </div>
   </div>

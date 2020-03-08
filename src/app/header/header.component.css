@@ -43,8 +43,9 @@
 header {
   background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../../assets/3.jpg');
   background-position: left;
-  height: 100vh;
+  height: 100%;
   background-attachment: fixed;
+  padding-bottom: 1rem;
 }
 
 .main-text, .sub-text {
@@ -82,10 +83,92 @@ header {
   transition: 0.3s;
 }
 
+.heading {
+  color: white;
+  font-family: 'Oswald';
+}
+
+.header-text {
+  height: calc(100% - 56px);
+  text-align: center;
+}
+
+.heading .main {
+  font-size: 15vw;
+}
+
+.header-separator {
+  border: 1px solid white;
+  width: 50px;
+  margin: 1rem auto;
+}
+
+.heading .sub {
+  font-size: 5vw;
+}
+
+.learn-more, .learn-more-arrow {
+  text-align: center;
+  color: white;
+
+}
+
+.learn-more {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.learn-more-arrow {
+  font-size: 1.6rem;
+  line-height: 0px;
+}
+
+.next-button {
+  cursor: pointer;
+  bottom: 0;
+  width: 100%
+}
+
+
+
+
+@media screen and (min-width:768px) {
+  .header-text {
+    text-align: left;
+  }
+
+  .heading .main {
+    font-size: 6rem;
+  }
+
+  .header-separator {
+    border: 2px solid white;
+    width: 50px;
+    margin: 1rem 0;
+  }
+
+  .heading .sub {
+    font-size: 1.2rem;
+  }
+
+  .learn-more {
+    font-size: 1rem;
+  }
+
+  .learn-more-arrow {
+    font-size: 1.6rem;
+  }
+
+}
+
 @media screen and (min-width:1200px) {
   .navbar {
     padding-left: 15rem;
     padding-right: 15rem;
+  }
+
+  .container {
+    max-width: 1230px;
   }
 
 }

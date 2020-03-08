@@ -12,7 +12,7 @@
   height: 444px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
   position: relative;
 }
 
@@ -30,7 +30,7 @@
   z-index: 2;
 }
 
-.profile-card:hover .additional {
+.profile-card.toggled .additional {
   width: 100%;
 }
 
@@ -48,7 +48,7 @@
   top: 10%;
   right: -2px;
   height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);
+  border-left: 2px solid rgba(0, 0, 0, 0.025);
 }
 
 .profile-card .additional .more-info {
@@ -83,35 +83,46 @@
   font-size: 0.9em;
 }
 
-p{
+p {
   font-size: 20px;
 }
 
 .about-mobile {
-  display: flex!important;
-
+  display: flex !important;
 }
 
 .about-desktop {
-  display: none!important;
+  display: none !important;
+}
+
+.toggle-arrow {
+  position: absolute;
+  bottom: 0px;
+  right: 1rem;
+  font-size: 2rem;
+  color: black;
+}
+
+.toggle-arrow.white {
+  color: white;
+}
+
+.iconify {
+  cursor: pointer;
 }
 
 
-@media screen and (min-width:992px) {
+
+@media screen and (min-width: 992px) {
   .container {
     max-width: 90%;
-}
+  }
 
   .about-mobile {
-    display: none!important;
-
+    display: none !important;
   }
 
   .about-desktop {
-    display: flex!important;
+    display: flex !important;
   }
-
-
 }
-
-
