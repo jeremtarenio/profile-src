@@ -15,7 +15,6 @@ export class HeaderComponent implements OnInit {
   }
 
   scroll(id) {
-    console.log(`scrolling to ${id}`);
     const el = document.getElementById(id);
 
     window.scrollTo({
@@ -38,7 +37,6 @@ export class HeaderComponent implements OnInit {
   @HostListener('window:scroll', ['$event']) // for window scroll events
   @debounce()
   onScroll(event) {
-    console.log(event);
     this.scrolled = true;
     this.scrolled = window.pageYOffset === 0 ? false : true;
   }

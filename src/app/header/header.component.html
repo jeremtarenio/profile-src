@@ -1,4 +1,4 @@
-<header id="header">
+<header id="header" class="parallax">
   <div>
       <!-- [ngClass]="{'fixed-top': isScreenSmall === true}" -->
       <nav
@@ -57,12 +57,21 @@
         <div class="header-separator"></div>
         <p class="sub">I'm a junior web developer based in San Fernando, Pampanga.</p>
       </div>
+      <div class="btn-container" data-aos="fade-right" data-aos-delay="600">
+        <button class="btn my-button1 mr-3 clickable" (click)="scroll('ebayung')" >My Work</button>
+      </div>
+
+      <div class="btn-container" data-aos="fade-left" data-aos-delay="600">
+        <a class="btn my-button1 clickable" href="assets/cv.pdf" target="_blank">CV <span class="iconify" data-icon="bx:bxs-download" data-inline="false"></span></a>
+      </div>
+
+
 
     </div>
   </div>
-  <div class="next-button d-flex justify-content-center noselect" (click)="scroll('about-me')" data-aos="fade-down" data-aos-delay="600" data-aos-offset="0px">
+  <div class="next-button d-flex justify-content-center noselect" (click)="scroll('about-me')" data-aos="fade-down" data-aos-delay="1000" data-aos-offset="0px">
     <div >
-      <p class="learn-more m-0" >Click to continue</p>
+      <p class="learn-more m-0" >Continue</p>
       <p class="learn-more-arrow m-0"><span class="iconify" data-icon="ic-baseline-keyboard-arrow-down" data-inline="false"></span></p>
     </div>
 

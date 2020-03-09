@@ -85,7 +85,6 @@ export class SkillsComponent implements OnInit {
   }
 
   scroll(id) {
-    console.log(`scrolling to ${id}`);
     const el = document.getElementById(id);
 
     window.scrollTo({

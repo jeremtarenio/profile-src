@@ -27,6 +27,11 @@ h4 {
                                   supported by Chrome, Opera and Firefox */
 }
 
+.btn:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
 .title-underline {
   width: 15rem;
   height: 1px;
@@ -47,6 +52,14 @@ h4 {
 
 .letter-spacing-02 {
   letter-spacing: 0.2rem;
+}
+
+.parallax {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('./assets/3.jpg');
+  background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
